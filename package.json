@@ -1,0 +1,54 @@
+{
+  "name": "banxt-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:cover": "jest --coverage",
+    "start": "npm run-script pretest && nodemon server.js",
+    "pretest": "eslint --ignore-path .gitignore ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/preset-env": "^7.4.5",
+    "@babel/register": "^7.4.4",
+    "@babel/runtime": "^7.4.5",
+    "axios": "^0.18.0",
+    "babel-loader": "^8.0.0-beta.0",
+    "body-parser": "^1.19.0",
+    "cluster": "^0.7.7",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^8.0.0",
+    "express": "^4.16.4",
+    "express-joi-validator": "^2.0.1",
+    "express-validation": "^1.0.2",
+    "jest": "^24.8.0",
+    "joi": "^14.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "mock-express-response": "^0.2.2",
+    "mysql2": "^1.6.5",
+    "nodemon": "^1.19.0",
+    "plaid": "^4.8.0",
+    "sequelize": "^5.15.1",
+    "sequelize-cli": "^5.5.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.4.4",
+    "babel-jest": "^24.8.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.3",
+    "husky": "^4.2.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run-script pretest",
+      "pre-push": "npm run-script pretest"
+    }
+  }
+}
