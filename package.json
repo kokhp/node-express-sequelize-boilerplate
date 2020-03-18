@@ -15,7 +15,7 @@
     "@babel/preset-env": "^7.4.5",
     "@babel/register": "^7.4.4",
     "@babel/runtime": "^7.4.5",
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "babel-loader": "^8.0.0-beta.0",
     "body-parser": "^1.19.0",
     "cluster": "^0.7.7",
