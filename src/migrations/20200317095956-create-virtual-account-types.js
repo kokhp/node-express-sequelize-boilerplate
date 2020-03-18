@@ -3,10 +3,10 @@
 module.exports = {
 	up: (queryInterface, Sequelize) => queryInterface.createTable('virtualAccountTypes', {
 		id: {
+			type: Sequelize.UUID,
 			allowNull: false,
-			autoIncrement: true,
 			primaryKey: true,
-			type: Sequelize.INTEGER,
+			defaultValue: Sequelize.UUIDV4(),
 		},
 		name: {
 			type: Sequelize.STRING,
