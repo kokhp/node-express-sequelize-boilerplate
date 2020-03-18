@@ -3,7 +3,6 @@ import express from 'express';
 
 import adminRoutes from './admin';
 import publicRoutes from './public';
-import authRoutes from './auth';
 import userRoutes from './users';
 import virtualAccountTypeRoutes from './virtualAccountTypes';
 import apiMiddleware from '../middleware/apiAuth';
